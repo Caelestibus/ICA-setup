@@ -86,3 +86,22 @@ openssl verify -CAfile ../ca/ca.crt devportal.crt
 devportal.crt: OK
 
 ---
+
+
+# Note 📝
+
+Run this command to view your certificate
+
+```bash
+openssl x509 -in ca.crt -text -noout
+```
+
+As running
+
+```bash
+cat ca.crt
+```
+would open the certificate in it's encoded form, xoxo guys 💋💋
+
+---
+
