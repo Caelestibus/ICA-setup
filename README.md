@@ -20,7 +20,7 @@ cd ~/internalCA/ca
 ### 2. Generate encrypted private key for the CA:
 
 ```bash
-openssl genpkey -algorithm RSA -aes256 -out ca.key -pkeyopt rsa_keygen_bits:4096
+openssl genpkey -algorithm RSA -out ca.key -pkeyopt rsa_keygen_bits:4096 -aes-256-cbc
 ```
 
 At this point you would be prompt to set a passphrase (set a password).
